@@ -37,7 +37,7 @@ class _CreateRoomPageState extends State<CreateRoomPage> {
               hintText: 'Enter Nickname',
               controller: _nameController,
             ),
-            Gap(20),
+            Gap(40),
             MenuButton(
               onTap: () {},
               buttonText: 'Create Room',

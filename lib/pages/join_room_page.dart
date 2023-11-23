@@ -12,13 +12,14 @@ class JoinRoomPage extends StatefulWidget {
 }
 
 class _JoinRoomPageState extends State<JoinRoomPage> {
-  final TextEditingController _controller = TextEditingController();
+  final TextEditingController _nameController = TextEditingController();
+  final TextEditingController _roomCodeController = TextEditingController();
 
   @override
   void dispose() {
     // TODO: implement dispose
     super.dispose();
-    _controller.dispose();
+    _nameController.dispose();
   }
 
   void mainMenu(BuildContext context) {
@@ -35,9 +36,14 @@ class _JoinRoomPageState extends State<JoinRoomPage> {
           children: [
             CustomInputField(
               hintText: 'Enter Nickname',
-              controller: _controller,
+              controller: _nameController,
             ),
             Gap(20),
+            CustomInputField(
+              hintText: 'Enter Room Code',
+              controller: _roomCodeController,
+            ),
+            Gap(40),
             MenuButton(
               onTap: () {},
               buttonText: 'Join Room',

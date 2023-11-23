@@ -15,13 +15,13 @@ class CustomInputField extends StatelessWidget {
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width / 1.3;
     return Container(
-      height: 60,
+      height: 70,
       width: width,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         boxShadow: [
           BoxShadow(
             color: moonstone,
-            offset: const Offset(8, 5),
+            offset: Offset(8, 5),
           ),
         ],
       ),
@@ -29,6 +29,10 @@ class CustomInputField extends StatelessWidget {
         autocorrect: false,
         maxLines: 2,
         controller: controller,
+        style: GoogleFonts.bungee(
+          color: moonstone,
+          fontSize: 20,
+        ),
         decoration: InputDecoration(
           border: const OutlineInputBorder(
             borderSide: BorderSide.none,

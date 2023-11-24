@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:tickytacky/responsive/responsive.dart';
 import 'package:tickytacky/widgets/custom_text_field.dart';
 import 'package:tickytacky/widgets/menu_button.dart';
 
@@ -30,8 +31,7 @@ class _JoinRoomPageState extends State<JoinRoomPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        alignment: Alignment.center,
+      body: Responsive(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

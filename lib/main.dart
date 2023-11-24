@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tickytacky/pages/create_room_page.dart';
+import 'package:tickytacky/pages/game_page.dart';
 import 'package:tickytacky/pages/join_room_page.dart';
 import 'package:tickytacky/pages/main_menu_page.dart';
 import 'package:tickytacky/utils/colors.dart';
@@ -23,6 +24,7 @@ class TickyTacky extends StatelessWidget {
         MainMenuPage.routeName: (context) => MainMenuPage(),
         CreateRoomPage.routeName: (context) => CreateRoomPage(),
         JoinRoomPage.routeName: (context) => JoinRoomPage(),
+        GamePage.routeName: (context) => GamePage(),
       },
       initialRoute: MainMenuPage.routeName,
     );

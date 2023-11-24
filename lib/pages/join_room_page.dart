@@ -20,6 +20,7 @@ class _JoinRoomPageState extends State<JoinRoomPage> {
     // TODO: implement dispose
     super.dispose();
     _nameController.dispose();
+    _roomCodeController.dispose();
   }
 
   void mainMenu(BuildContext context) {
